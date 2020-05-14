@@ -4,6 +4,10 @@
 def key_for_min_value(name_hash)
   
   ikea_prices = []
+  
+  if name_hash == nil 
+    return nil 
+  end
 
   name_hash.each do |key, value|
     ikea_prices.push(value)
@@ -14,9 +18,8 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     if value == ikea_prices[0]
       return key
-    else
-      return nil 
     end
+    
   end
   
 end
