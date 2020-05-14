@@ -3,23 +3,9 @@
 
 def key_for_min_value(name_hash)
   
-  ikea_prices = []
-  
-  if name_hash[0] == nil 
-    return nil 
-  end
-
-  name_hash.each do |key, value|
-    ikea_prices.push(value)
-  end
-
-  ikea_prices.sort!
+  smallest_value = nil
   
   name_hash.each do |key, value|
-    if value == ikea_prices[0]
-      return key
-    end
-    
-  end
+    if smallest_value.is_i
   
 end
