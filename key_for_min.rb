@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   
   ikea_prices = []
   
-  if name_hash == nil 
+  if name_hash[0] == nil 
     return nil 
   end
 
