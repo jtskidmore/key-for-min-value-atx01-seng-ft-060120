@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   
   values = []
   
-  if name_hash
+  if name_hash.empty? 
   
   name_hash.each do |key, value|
     values.push(value)
